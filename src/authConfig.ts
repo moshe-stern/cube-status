@@ -1,7 +1,7 @@
 export const msalConfig = {
   auth: {
-    clientId: "your-client-id", // Replace with Application (client) ID
-    authority: "https://login.microsoftonline.com/your-tenant-id", // Replace with Directory (tenant) ID
+    clientId: "bbeeccfc-82e1-48b8-9767-b53847c74f81", // Replace with Application (client) ID
+    authority: "https://login.microsoftonline.com/d82742c9-4dd4-4162-a3ef-7727c0d9d588", // Replace with Directory (tenant) ID
     redirectUri: "http://localhost:3000", // Your redirect URI
   },
 };
