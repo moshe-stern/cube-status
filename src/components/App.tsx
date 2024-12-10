@@ -12,6 +12,7 @@ const App: React.FC = () => {
       await msalInstance.initialize()
       const response = await msalInstance.loginPopup(loginRequest);
       const accessToken = response.accessToken;
+      console.log(accessToken)
       // Fetch user info from Microsoft Graph
       const graphResponse = await fetch("https://graph.microsoft.com/v1.0/me", {
         headers: {
