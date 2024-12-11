@@ -1,5 +1,4 @@
 import { AccountInfo } from "@azure/msal-browser";
-import React from "react";
 
 interface IMessageBoardProp {
   user: AccountInfo | undefined;
