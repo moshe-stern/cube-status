@@ -18,8 +18,7 @@ export default function Cubes() {
   return (
     <>
         <h1>Cube Refresh Times</h1>
-        <Link to={'/message-board'}></Link>
-        <p>Message board</p>
+        <Link to={"/message-board"}>Message board</Link>
         <table className="table">
           <thead>
             <tr>

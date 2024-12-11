@@ -4,6 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+.message-board{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
 table {
   text-align: left;
