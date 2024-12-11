@@ -12,9 +12,12 @@
   "dependencies": {
     "@azure/msal-browser": "^3.27.0",
     "@azure/msal-react": "^2.2.0",
+    "attain-aba-shared": "^1.0.13",
+    "jwt-decode": "^4.0.0",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

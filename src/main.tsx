@@ -1,15 +1,15 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./components/App.tsx";
-import { PublicClientApplication } from "@azure/msal-browser";
-import { msalConfig } from "./authConfig.ts";
 import { MsalProvider } from "@azure/msal-react";
+import { createRoot } from "react-dom/client";
+import App from "./components/App";
+import { PublicClientApplication } from "@azure/msal-browser";
+import { msalConfig } from "./authConfig";
+import ErrorBoundary from "./components/Error";
 const msalInstance = new PublicClientApplication(msalConfig);
 
 createRoot(document.getElementById("root")!).render(
-  <MsalProvider instance={msalInstance}>
-    <StrictMode>
+  <ErrorBoundary>
+    <MsalProvider instance={msalInstance}>
       <App />
-    </StrictMode>
-  </MsalProvider>,
+    </MsalProvider>
+  </ErrorBoundary>,
 );
