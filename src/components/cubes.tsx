@@ -28,12 +28,11 @@ export default function Cubes(prop: ICubesProp) {
   return (
     <>
       <div className="jumbotron">
-        <h1 className="display-3">Cube Refresh Times</h1>
-        <input
-          className="form-control"
-          disabled={!prop.user?.idTokenClaims?.roles?.includes("cube-admin")}
-          type="text"
+        <h1 className="display-3">Cube Statuses</h1>
+        <textarea
           value={msg}
+          disabled={!prop.user?.idTokenClaims?.roles?.includes("cube-admin")}
+          className="form-control"
           onInput={(event) => setMsg(event.currentTarget.value)}
           onBlur={async (event) =>
             await updateMsgBoard(event.currentTarget.value)
