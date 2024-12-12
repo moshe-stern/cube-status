@@ -31,7 +31,7 @@ export default function Cubes(prop: ICubesProp) {
         <h1 className="display-3">Cube Refresh Times</h1>
         <input
           className="form-control"
-          disabled={!prop.user?.idTokenClaims?.roles?.includes('cube-admin')}
+          disabled={!prop.user?.idTokenClaims?.roles?.includes("cube-admin")}
           type="text"
           value={msg}
           onInput={(event) => setMsg(event.currentTarget.value)}
