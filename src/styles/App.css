@@ -9,6 +9,8 @@
   flex-direction: column;
   gap: 1em;
 }
+
+
 .jumbotron {
   margin-bottom: 2em;
   display: flex;
@@ -18,6 +20,7 @@
 
 .jumbotron .form-control {
   text-align: center;
+  font-size: calc(1.25rem + 1vw);
 }
 .card {
   padding: 1em !important;
