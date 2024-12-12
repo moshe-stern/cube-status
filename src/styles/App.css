@@ -4,15 +4,24 @@
   padding: 2rem;
   text-align: center;
 }
-.message-board{
+.message-board {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-.jumbotron{
+.jumbotron {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
+.jumbotron .form-control {
+  text-align: center;
+}
+.card {
+  padding: 1em !important;
+}
 table {
   text-align: left;
 }

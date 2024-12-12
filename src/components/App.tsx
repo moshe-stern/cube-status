@@ -3,7 +3,6 @@ import { MsalAuthenticationTemplate, useMsal } from "@azure/msal-react";
 import { useEffect, useState } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Cubes from "./cubes";
-import MessageBoard from "./message-board";
 
 export default function App() {
   const { accounts } = useMsal();
@@ -19,11 +18,7 @@ export default function App() {
     <MsalAuthenticationTemplate interactionType={InteractionType.Redirect}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Cubes></Cubes>}></Route>
-          <Route
-            path="/message-board"
-            element={<MessageBoard user={user}></MessageBoard>}
-          ></Route>
+          <Route path="/" element={<Cubes user={user}></Cubes>}></Route>
         </Routes>
       </BrowserRouter>
     </MsalAuthenticationTemplate>
