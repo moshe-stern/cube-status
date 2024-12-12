@@ -9,6 +9,9 @@
   flex-direction: column;
   gap: 1em;
 }
+.jumbotron{
+  margin-bottom: 2em;
+}
 
 table {
   text-align: left;
